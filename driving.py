@@ -21,4 +21,6 @@ def list_sahara_cars(destination_name: str) -> list:
     
     return cars
  
-cars = list_sahara_cars('Cairo')
+cars = list_sahara_cars('Tripoli')
+
+print(cars)

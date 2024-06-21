@@ -12,9 +12,4 @@ def get_destination(destination_name):
 
     return destination
 
-destination_name = 'Cairo'
-destination = get_destination(destination_name)
-if destination:
-    print(f"ID: {destination[0]}, Name: {destination[1]}, Distance: {destination[2]} km")
-else:
-    print(f"Destination '{destination_name}' not found.")
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #444;
+        background-color: #f3f3f3;
+        height: 100vh;
+        padding: 2rem;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+      }
+
+      .pokemon__moves,
+      .pokemon__stats {
+        display: none;
+        width: 45%;
+        height: 200px;
+        background-color: white;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: 1px solid #ccc;
+        padding: 1rem;
+      }
+
+      .moves__row,
+      .stats__row {
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input type="text" id="pokemonName" placeholder="Enter pokemon name" />
+    <button onclick="fetchData()">fetch Pokemon</button><br />
+    <img
+      src=""
+      alt="Pokemon Sprite"
+      id="pokemonSprite"
+      style="display: none"
+    /><br /><br />
+
+    <div
+      id="info"
+      style="display: flex; justify-content: space-around; display: none"
+    >
+      <p id="name">Name</p>
+      <p id="weight">Weight</p>
+      <p id="height">Height</p>
+    </div>
+
+    <div class="container">
+      <div class="pokemon__moves">
+        <div class="moves__row">
+          <div class="moves">Moves</div>
+        </div>
+      </div>
+
+      <div class="pokemon__stats">
+        <div class="stats__row">
+          <div class="stats">Stats</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
