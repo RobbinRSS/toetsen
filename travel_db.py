@@ -32,7 +32,7 @@ cursor.executemany('''
 ''', cars)
 
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS destinies (
+    CREATE TABLE IF NOT EXISTS destinations (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT NOT NULL,
         distance REAL NOT NULL  -- Distance in kilometers
@@ -42,7 +42,7 @@ cursor.execute('''
 destinations = [
     ('Tunis', 300.0),
     ('Tripoli', 600.0),
-    ('Cairo', 900.0),
+    ('Cairo', 90000.0),
     ('Bamako', 1300.0),
     ('Khartoum', 1700.0)
 ]
